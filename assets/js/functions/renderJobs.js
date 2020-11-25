@@ -1,6 +1,11 @@
 import { Job } from "./Job.js";
+import { togleClass } from "./togleClass.js";
 
 export const renderJobs = async (jobs)=>{
+
+    const $loaderDom = document.querySelector('.lds-dual-ring')
+    togleClass($loaderDom,'activeCenter')
+
 
     const jobsTorender = await jobs 
     const $jobsContainer = document.getElementById('jobsContainer')
@@ -16,6 +21,7 @@ export const renderJobs = async (jobs)=>{
 
 
      }
+     togleClass($loaderDom,'activeCenter')
  
 
 }

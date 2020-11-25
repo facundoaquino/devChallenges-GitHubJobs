@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/loader.css">
   <title>GitHub Jobs</title>
  </head>
  <body>
@@ -14,11 +15,18 @@
      </header>
 
      <main class="main">
-         <form class="search">
-            <div  class="search__container"><i class="search__icon fas fa-briefcase"></i><input class="search__inputSearch" type="seach" placeholder="title companies expertise or benefits">
+         <form id="formSearch" class="search">
+            <div  class="search__container"><i class="search__icon fas fa-briefcase"></i><input list="searchJob" id="searchJobs" class="search__inputSearch" type="search" placeholder="title companies expertise or benefits">
+                  
+                <!-- <datalist id="searchJob">
+                    <option value="Chocolate">
+                    <option value="Coconut">
+                    <option value="Mint">
+                    <option value="Strawberry">
+                    <option value="Vanilla">
+                </datalist> -->
             
-            
-                <button class="search__submit" type="submit">Search</button>
+                <button id="searchSubmit" class="search__submit" type="submit">Search</button>
             </div>
          </form>
 
@@ -39,6 +47,8 @@
              </aside>
               
              <section id="jobsContainer" class="jobs__cards">
+            <div class="lds-dual-ring"></div>
+
                <!-- <article class="jobs__job">
                    <img src="" alt="" class="job__logo">
                    <div class="job__container">
