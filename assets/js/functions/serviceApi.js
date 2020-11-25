@@ -2,10 +2,15 @@
 
 
 
+
+
+
 export const getJobsApi= async (url)=>{
 
     const response = await fetch(url)
     
-    const json = await response.json()
-    console.log(json);
+    const data = await response.json()
+    
+    return await data
+
 }

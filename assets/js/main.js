@@ -1,8 +1,17 @@
-import {getJobsApi} from './controllers/serviceApi.js'
+import { renderJobs } from './functions/renderJobs.js'
+import {getJobsApi} from './functions/serviceApi.js'
 
-const defaultLocation='london'
+const defaultLocation='new york'
 
-const urlJobs = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?location=${defaultLocation}`
+const urlJobs = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?location=${encodeURIComponent(defaultLocation)}`
 
 
-getJobsApi(urlJobs)
+const jobs = getJobsApi(urlJobs)
+
+
+/*---------------------- dom references ---------------------*/
+
+
+ 
+
+renderJobs(jobs)

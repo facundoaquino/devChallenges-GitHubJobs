@@ -9,7 +9,56 @@
   <title>GitHub Jobs</title>
  </head>
  <body>
-     
+     <header class="header">
+         <h1 class="header__title"><strong>Github</strong> Jobs</h1>
+     </header>
+
+     <main class="main">
+         <form class="search">
+            <div  class="search__container"><i class="search__icon fas fa-briefcase"></i><input class="search__inputSearch" type="seach" placeholder="title companies expertise or benefits">
+            
+            
+                <button class="search__submit" type="submit">Search</button>
+            </div>
+         </form>
+
+         <section class="jobs">
+             <aside class="jobs__aside">
+                <input type="checkbox" name="" id=" "><label class="jobs__label" for="fulltime">Full time</label>
+                <form class="jobs__form" >
+                    <label for="location">Location</label>
+                    <input type="text" id="location">
+    
+                    <div jobs__containerOptions ><input type="checkbox" name="" id=""><label class="jobs__label" for="">London</label></div>
+                    <div jobs__containerOptions ><input type="checkbox" name="" id=""><label class="jobs__label" for="">Amsterdam</label></div>
+                    <div jobs__containerOptions ><input type="checkbox" name="" checked id=""><label class="jobs__label" for="">New York</label></div>
+                    <div jobs__containerOptions ><input type="checkbox" name="" id=""><label class="jobs__label" for="">Berlin</label></div>
+                    
+                </for>
+
+             </aside>
+              
+             <section id="jobsContainer" class="jobs__cards">
+               <!-- <article class="jobs__job">
+                   <img src="" alt="" class="job__logo">
+                   <div class="job__container">
+                       <h3 class="job__company"></h3>
+
+                       <h2 class="job__title"></h2>
+
+                       <div class="job__container--description">
+                           <h3 class="job__isfulltime"></h3>
+                           <p class="job__location"></p>
+                           <p class="job__time"></p>
+                       </div>
+                   </div>
+               </article> -->
+
+             </section>
+         </section>
+
+
+     </main>
   <script src="https://kit.fontawesome.com/389c8e1dce.js" crossorigin="anonymous"></script>
   <script type="module" src="assets/js/main.js"></script>
  </body>
