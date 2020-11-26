@@ -64,7 +64,7 @@ body {
 }
 
 .search__inputSearch::placeholder,
-.search__icon {
+.search__icon , .jobs__containerInput > input::placeholder {
 	color: #b9bdcf;
 	font: size 10px;
 }
@@ -80,10 +80,49 @@ body {
 	left: 5px;
 }
 
+/* form aside styles */
+.jobs__form > input , .jobs__form > label{
+	margin-top: 15px;
+}
+
+.jobs__form > label {
+	font-weight: 700;
+	color: #B9BDCF;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.jobs__containerInput {
+	width: 90%;
+	margin-top: 10px;
+	position: relative;
+	
+}
+.jobs__containerInput > input {
+	width: 100%;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;	
+	color: #B9BDCF;
+	border: none;
+	outline: none;
+	padding: 10px;
+	padding-left: 25px;
+}
+
+
+.jobs__containerOptions{
+	margin-top: 15px;
+}
+
+
+
+
+
+
 /* main jobs container and jobs cards */
 
 .jobs {
-	margin-top: 50px;
+	margin-top: 20px;
 	display: flex;
 }
 
@@ -116,7 +155,7 @@ input[type='checkbox'] {
 
 .jobs__job {
 	display: flex;
-	margin-bottom: 100px;
+	margin-bottom: 20px;
 	background-color: white;
 	min-height: 114px;
 	justify-content: space-around;
