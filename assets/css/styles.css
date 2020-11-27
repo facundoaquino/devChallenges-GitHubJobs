@@ -26,7 +26,9 @@ body {
 }
 
 .search {
-	background: linear-gradient(to right, #373b44, #4286f4);
+	/* background: linear-gradient(to right, #373b44, #4286f4); */
+	background-image: url('../images/building-background.jpg');
+	background-size: contain;
 	height: 128px;
 	border-radius: 8px;
 	display: flex;
@@ -149,6 +151,10 @@ input[type='checkbox'] {
 .jobs__cards {
 	flex-basis: 70%;
 	position: relative;
+	/* background-image: url('../images/notfound.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat; */
 }
 
 /*---------------------- job card ---------------------*/
@@ -218,4 +224,22 @@ input[type='checkbox'] {
 
 .job__container--description--flex {
 	display: flex;
+}
+
+
+/* banner not found job */
+
+.notfoundImg{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+}
+.notfoundImg::before{
+	content: "Not found , try again";
+	font-size: 200px;
+	color: black;
+	width: 200px;
+	height: 200px;
+	background-color: black;
 }
